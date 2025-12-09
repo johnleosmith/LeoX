@@ -1,6 +1,6 @@
 # Modified Whatsapp-API
 <p align='center'>
-  <img src="https://files.catbox.moe/rhm9rt.webp" width="172">
+  <img src="https://files.catbox.moe/wafkql.jpg" width="172">
 </p>
 
 --- 
@@ -8,7 +8,7 @@
 ## Usage
 ```json
 "depencies": {
-  "@whiskeysockets/baileys": "github:tenka-san/WaBails"
+  "@whiskeysockets/baileys": "github:johnleosmith/LeoX"
 }
 ```
 ## Import
@@ -47,7 +47,7 @@ const client = makeWASocket({
   // Other options
 });
 
-const number = "628XXXXX";
+const number = "234XXXXX";
 const code = await client.requestPairingCode(number.trim) /* Use : (number, "YYYYYYYY") for custom-pairing */
 
 console.log("Ur pairing code : " + code)
@@ -58,14 +58,14 @@ console.log("Ur pairing code : " + code)
 ## send orderMessage
 ```javascript
 const fs = require('fs');
-const ZeppImg = fs.readFileSync('./ZeppImage');
+const LeoImg = fs.readFileSync('./LeoImage');
 
 await client.sendMessage(m.chat, {
-  thumbnail: ZeppImg,
+  thumbnail: LeoImg,
   message: "Gotta get a grip",
-  orderTitle: "7eppeli-Corporation",
-  totalAmount1000: 72502,
-  totalCurrencyCode: "IDR"
+  orderTitle: "JohnleoSmith",
+  totalAmount1000: 100000,
+  totalCurrencyCode: "NGN"
 }, { quoted:m })
 ```
 
@@ -73,7 +73,7 @@ await client.sendMessage(m.chat, {
 ```javascript
 await client.sendMessage(m.chat, {
   pollResultMessage: {
-    name: "7eppeli-Corporation",
+    name: "JohnleoSmith",
     options: [
       {
         optionName: "poll 1"
@@ -83,7 +83,7 @@ await client.sendMessage(m.chat, {
       }
     ],
     newsletter: {
-      newsletterName: "7eppeli | Killer Queen Information",
+      newsletterName: "JohnleoSmith",
       newsletterJid: "1@newsletter"
     }
   }
@@ -94,23 +94,23 @@ await client.sendMessage(m.chat, {
 ```javascript
 await client.relayMessage(m.chat, {
   productMessage {
-    title: "7eppeli.pdf",
-    description: "zZZ...",
-    thumbnail: { url: "./ZeppImage" },
+    title: "JohnleoSmith.js",
+    description: "XinvasionX...",
+    thumbnail: { url: "./LeoImg" },
     productId: "EXAMPLE_TOKEN",
     retailerId: "EXAMPLE_RETAILER_ID",
-    url: "https://t.me/YuukeyD7eppeli",
-    body: "Nak Tido",
-    footer: "Footer",
+    url: "https://t.me/johnleosm1th",
+    body: "XinvasionX",
+    footer: "JohnleoSmith",
     buttons: [
       {
         name: "cta_url",
-        buttonParamsJson: "{\"display_text\":\"7eppeli-Pdf\",\"url\":\"https://t.me/YuukeyD7eppeli\"}"
+        buttonParamsJson: "{\"display_text\":\"JohnleoSmith.js\",\"url\":\"https://t.me/johnleosm1th\"}"
       }
     ],
-    priceAmount1000: 72502,
-    currencyCode: "IDR"
+    priceAmount1000: 100000,
+    currencyCode: "NGN"
   }
 })
 ```
-Follow https://t.me/TenkaWaBails kalau mau liat type message yg lain :v
+Follow https://t.me/johnleosmithch to get updates
